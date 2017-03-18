@@ -6,6 +6,9 @@
 //  Copyright © 2017 ReeS. All rights reserved.
 //
 
+#import <PodA/ExtraA.h>
+#import <PodB/ExtraB.h>
+
 #import "ShareViewController.h"
 
 @interface ShareViewController ()

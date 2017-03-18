@@ -30,11 +30,14 @@ TODO: Add long description of the pod here.
 
   s.subspec 'Core' do |sp|
     sp.source_files = 'PodA/Classes/CoreA.*'
+
+    sp.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'POD_A_DEFINE_CORE' }
+    sp.user_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'POD_A_DEFINE_CORE' }
   end
 
   s.subspec 'Extra' do |sp|
     sp.dependency 'PodA/Core'
-    
+
     sp.source_files = 'PodA/Classes/ExtraA.*'
     sp.pod_target_xcconfig = { 
       'APPLICATION_EXTENSION_API_ONLY' => 'YES',

@@ -7,9 +7,7 @@
 //
 
 #import <PodA/CoreA.h>
-#import <PodA/ExtraA.h>
 #import <PodB/CoreB.h>
-#import <PodB/ExtraB.h>
 
 #import "ViewController.h"
 
